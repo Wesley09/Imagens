@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui">
+    <com.example.recentsmenu.ContactButton android:textColor="#00000000" android:gravity="left" android:background="@drawable/home" android:focusable="true" android:clickable="true" android:layout_width="150.0dip" android:layout_height="35.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="2.0dip" android:scaleType="fitXY" android:layout_alignParentLeft="true" />
+    <com.example.recentsmenu.MmsButton android:textColor="#00000000" android:gravity="right" android:background="@drawable/home2" android:focusable="true" android:clickable="true" android:layout_width="150.0dip" android:layout_height="35.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="6.0dip" android:scaleType="fitXY" android:layout_alignParentRight="true" />
+</RelativeLayout>

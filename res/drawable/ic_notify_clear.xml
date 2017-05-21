@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="50" android:drawable="@drawable/ic_notify_clear_normal_0" />
+    <item android:duration="50" android:drawable="@drawable/ic_notify_clear_normal_1" />
+    <item android:duration="50" android:drawable="@drawable/ic_notify_clear_normal_2" />
+    <item android:duration="50" android:drawable="@drawable/ic_notify_clear_normal_3" />
+    <item android:duration="50" android:drawable="@drawable/ic_notify_clear_normal_4" />
+    <item android:duration="50" android:drawable="@drawable/ic_notify_clear_normal_5" />
+    <item android:duration="50" android:drawable="@drawable/ic_notify_clear_normal_6" />
+    <item android:duration="50" android:drawable="@drawable/ic_notify_clear_normal_7" />
+    <item android:duration="50" android:drawable="@drawable/ic_notify_clear_normal_8" />
+    <item android:duration="50" android:drawable="@drawable/ic_notify_clear_normal_9" />
+    <item android:duration="50" android:drawable="@drawable/ic_notify_clear_normal_10" />
+    <item android:duration="50" android:drawable="@drawable/ic_notify_clear_normal_11" />
+    <item android:duration="50" android:drawable="@drawable/ic_notify_clear_normal_12" />
+    <item android:duration="50" android:drawable="@drawable/ic_notify_clear_normal_13" />
+    <item android:duration="50" android:drawable="@drawable/ic_notify_clear_normal_14" />
+    <item android:duration="50" android:drawable="@drawable/ic_notify_clear_normal_15" />
+    <item android:duration="50" android:drawable="@drawable/ic_notify_clear_normal_16" />
+    <item android:duration="50" android:drawable="@drawable/ic_notify_clear_normal_17" />
+    <item android:duration="100" android:drawable="@drawable/ic_notify_clear_normal_18" />
+    <item android:duration="100" android:drawable="@drawable/ic_notify_clear_normal_19" />
+    <item android:duration="1000" android:drawable="@drawable/ic_notify_clear_normal_20" />
+</animation-list>

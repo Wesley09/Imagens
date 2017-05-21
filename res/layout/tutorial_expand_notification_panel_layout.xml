@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/expand_notification_panel_layout" android:background="@drawable/tutorial_noti_empty" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="top|center" android:id="@id/expand_notification_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tutorial_expand_notification_top_margin" android:src="@drawable/tutorial_noti_close" />
+    <FrameLayout android:layout_gravity="top|center" android:orientation="vertical" android:id="@id/help_anim_view" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.android.systemui.TutorialDragDownAnimView android:layout_gravity="top|left|center" android:id="@id/drop_down_anim_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/tutorial_drop_down_anim_left_margin" android:layout_marginTop="@dimen/tutorial_expand_notification_drop_down_anim_layout_top_margin" />
+        <com.android.systemui.TutorialDragDownAnimView android:layout_gravity="top|right|center" android:id="@id/drop_down_anim_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tutorial_expand_notification_drop_down_anim_layout_top_margin" android:layout_marginRight="@dimen/tutorial_drop_down_anim_left_margin" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="top|center" android:id="@id/help_tip_expand_notification" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/tutorial_tip_left_margin" android:layout_marginTop="@dimen/tutorial_tip_expand_notification_top_margin" android:layout_marginRight="@dimen/tutorial_tip_right_margin">
+        <FrameLayout android:id="@id/help_tip_expand_notification_msg_text" android:background="@drawable/help_popup_picker_bg_w_01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tutorial_popup_body_and_top_tail_gap">
+            <TextView android:id="@id/help_tip_expand_notification_close_text" android:text="@string/tutorial_expand_notification_panel_drag_down" style="@style/TutorialNotiPopupStyle" />
+        </FrameLayout>
+        <ImageView android:layout_gravity="top|center" android:id="@id/help_tip_expand_noti_msg_tail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/help_popup_picker_t_c" />
+    </FrameLayout>
+    <LinearLayout android:id="@id/expand_notification_open_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/expand_notification_open" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tutorial_expand_notification_top_margin" android:src="@drawable/tutorial_noti_open" />
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="center" android:id="@id/help_tip_expand_notification_complete" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/tutorial_tip_left_margin" android:layout_marginRight="@dimen/tutorial_tip_right_margin">
+        <FrameLayout android:id="@id/help_tip_access_notification_complete_msg_text" android:background="@drawable/help_popup_picker_bg_w_01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tutorial_popup_body_and_top_tail_gap">
+            <TextView android:id="@id/help_tip_expand_notification_complete_text" android:text="@string/tutorial_expand_notification_panel_drag_down_complete" style="@style/TutorialNotiPopupStyle" />
+        </FrameLayout>
+    </FrameLayout>
+    <ImageView android:layout_gravity="top|center" android:id="@id/notification_bottom_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/tutorial_notification_bottom_line" />
+</FrameLayout>

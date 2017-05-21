@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/header" android:background="@drawable/teng_bg_head" android:layout_width="fill_parent" android:layout_height="@dimen/notification_panel_header_height" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui">
+    <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/teng_bg_head" android:paddingLeft="0.0dip" android:paddingTop="0.0dip" android:paddingRight="0.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/notification_panel_header_height">
+        <LinearLayout android:layout_gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="10.0dip">
+            <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#00000000" android:paddingLeft="0.0dip" android:paddingTop="0.0dip" android:paddingRight="0.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/notification_panel_header_height">
+                <ImageView android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginLeft="0.0dip" android:src="@drawable/icon_klik" android:onClick="Teng" />
+                <TextView android:textSize="13.5dip" android:textStyle="normal" android:textColor="#ff6a706e" android:gravity="center" android:id="@id/teng" android:paddingLeft="0.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginLeft="0.0dip" android:layout_marginBottom="0.0dip" android:text="EDIT" android:shadowColor="#ff000000" android:onClick="Teng" />
+            </FrameLayout>
+            <TextView android:textSize="0.0dip" android:textStyle="normal" android:textColor="#ff6a706e" android:gravity="center" android:id="@id/teng" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginLeft="0.0dip" android:layout_marginBottom="1.0dip" android:text="|" android:shadowColor="#ff000000" />
+            <RelativeLayout android:gravity="right|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="2.0dip" android:layout_weight="1.0">
+                <LinearLayout android:layout_width="30.0dip" android:layout_height="30.0dip">
+                    <com.android.settings.ProfilePicture android:id="@id/image" android:background="@drawable/fmd_user" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="2.0dip" android:layout_marginTop="2.0dip" android:scaleType="centerCrop" android:onClick="FMDProfPic" android:contentDescription="@null" />
+                </LinearLayout>
+            </RelativeLayout>
+            <com.fmd.icons.SettingsIconBtn android:layout_gravity="center" android:tag=".Settings" android:background="@drawable/fmd_settings_btn" android:paddingLeft="4.0dip" android:layout_width="33.0dip" android:layout_height="33.0dip" android:layout_marginLeft="4.0dip" android:contentDescription="com.android.settings" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/datetime" android:background="#00000000" android:focusable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/expanded_divider_1">
+            <com.android.systemui.statusbar.policy.Clock android:textAppearance="@style/TextAppearance.StatusBar.Expanded.Clock" android:textSize="10.0dip" android:textColor="#ff6a706e" android:gravity="bottom" android:id="@id/clock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/notification_panel_header_clock_margin_left" android:singleLine="true" systemui:ampmSmall="true" />
+            <com.android.systemui.statusbar.policy.DateView android:textAppearance="@style/TextAppearance.StatusBar.Expanded.Date" android:textSize="10.0dip" android:textColor="#ff6a706e" android:gravity="bottom" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/notification_panel_header_date_margin_left" android:layout_marginRight="@dimen/notification_panel_header_date_margin_right" android:layout_marginBottom="8.799988dip" android:layout_toEndOf="@id/clock" />
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

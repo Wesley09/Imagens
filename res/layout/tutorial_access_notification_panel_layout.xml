@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/tutorial_home" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="top|center" android:orientation="vertical" android:id="@id/access_notification_panel_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:layout_gravity="top|center" android:id="@id/notification_panel_status_bar" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/tutorial_status_bar_height" />
+        <com.android.systemui.TutorialDragDownAnimView android:layout_gravity="top|center" android:id="@id/drop_down_anim" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tutorial_drop_down_anim_top_margin" />
+        <FrameLayout android:layout_gravity="top|center" android:id="@id/help_tip_access_notification" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/tutorial_tip_left_margin" android:layout_marginTop="@dimen/tutorial_tip_top_margin" android:layout_marginRight="@dimen/tutorial_tip_right_margin">
+            <FrameLayout android:id="@id/help_tip_access_notification_msg_text" android:background="@drawable/help_popup_picker_bg_w_01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tutorial_popup_body_and_top_tail_gap">
+                <TextView android:id="@id/help_tip_access_notification_text" android:text="@string/tutorial_notification_panel_drag_down" style="@style/TutorialNotiPopupStyle" />
+            </FrameLayout>
+            <ImageView android:layout_gravity="top|center" android:id="@id/help_tip_access_notification_msg_tail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/help_popup_picker_t_c" />
+        </FrameLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/access_notification_panel" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="top|center" android:id="@id/tutorial_noti_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tutorial_noti_empty" />
+                <ImageView android:layout_gravity="top|center" android:id="@id/tutorial_noti_open" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tutorial_expand_notification_top_margin" android:src="@drawable/tutorial_noti_open" />
+            </FrameLayout>
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="center" android:id="@id/help_tip_access_notification_complete" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/tutorial_tip_left_margin" android:layout_marginRight="@dimen/tutorial_tip_right_margin">
+            <FrameLayout android:id="@id/help_tip_access_notification_complete_msg_text" android:background="@drawable/help_popup_picker_bg_w_01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tutorial_popup_body_and_top_tail_gap">
+                <TextView android:id="@id/help_tip_access_notification_complete_text" android:text="@string/tutorial_notification_panel_drag_down_complete" style="@style/TutorialNotiPopupStyle" />
+            </FrameLayout>
+        </FrameLayout>
+        <ImageView android:layout_gravity="top|center" android:id="@id/notification_panel_handler" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tutorial_handler" />
+        <ImageView android:layout_gravity="top|center" android:id="@id/notification_panel_handler_grey" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tutorial_handler_grey" />
+    </FrameLayout>
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/tutorial_access_quick_panel_layout" />
+</FrameLayout>

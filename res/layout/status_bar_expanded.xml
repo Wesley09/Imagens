@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.phone.NotificationPanelView android:id="@id/notification_panel" android:background="#00000000" android:paddingLeft="0.0dip" android:paddingTop="@dimen/notification_panel_padding_top" android:paddingRight="0.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="@dimen/notification_panel_margin_left"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/close_handle_underlap" android:animateLayoutChanges="false">
+        <include android:layout_width="0.0dip" android:layout_height="0.0dip" layout="@layout/status_bar_expanded_header" />
+        <include android:layout_width="0.0dip" android:layout_height="0.0dip" layout="@layout/status_bar_expanded_header" />
+        <include android:layout_width="fill_parent" android:layout_height="0.0dip" layout="@layout/9_ini_punya_ilham" />
+        <include android:layout_width="fill_parent" android:layout_height="@dimen/notification_panel_header_tengteng" layout="@layout/teng_teng_status_bar_expanded_header" />
+        <include android:layout_width="fill_parent" android:layout_height="@dimen/notification_panel_header_tengteng" layout="@layout/3_ini_punya_tengteng" />
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.bloody.badboy.MaterialRipple android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.tenten.TogglesButton2 android:orientation="vertical" android:background="@drawable/uhes_quicksetting" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip">
+                    <LinearLayout android:orientation="vertical" android:id="@id/LayE2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <include layout="@layout/tengtengtiga" />
+                    </LinearLayout>
+                    <com.tenten.LayoutAnimation1 android:layout_width="fill_parent" android:layout_height="wrap_content" android:rotationY="0.0">
+                        <include layout="@layout/viewpager_panel" />
+                    </com.tenten.LayoutAnimation1>
+                </com.tenten.TogglesButton2>
+            </com.bloody.badboy.MaterialRipple>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.tenten.LayoutAnimation2 android:background="#30000000" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </com.tenten.LayoutAnimation2>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="#ff555555" />
+                </RelativeLayout>
+                <include android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_alignParentRight="true" layout="@layout/status_bar_expanded_header" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@id/status_bar_header_divider" android:background="#ff6e6e6e" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignParentBottom="true" />
+        <TextView android:textAppearance="@style/TextAppearance.StatusBar.Expanded.Network.EmergencyOnly" android:gravity="center" android:id="@id/emergency_calls_only" android:padding="4.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/scrollCart" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="#fff6f7f9" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+                <View android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="0.100000024dip" />
+                <ScrollView android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+                    <LinearLayout android:orientation="vertical" android:id="@id/scrollCart" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.android.systemui.statusbar.policy.NotificationRowLayout android:id="@id/notificationItems" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" systemui:rowHeight="@dimen/notification_row_min_height" />
+                        <com.android.systemui.statusbar.policy.NotificationRowLayout android:id="@id/onGoingItems" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" systemui:rowHeight="@dimen/notification_min_height" />
+                        <com.android.systemui.statusbar.policy.NotificationRowLayout android:id="@id/latestItems" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" systemui:rowHeight="@dimen/notification_row_min_height" />
+                        <View android:background="#ffc0c0c0" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/noNotificationsTitle" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="@dimen/status_bar_expanded_notification_category_height">
+                            <TextView android:textSize="9.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/noNotificationsText" android:paddingLeft="11.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/status_bar_expanded_notification_margin" android:text="@string/status_bar_no_notifications_title" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@id/onGoingCart" android:background="#00000000" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip">
+                            <TextView android:textSize="11.0dip" android:textColor="@color/notification_category_color" android:gravity="left|center" android:id="@id/onGoingNotificationText" android:paddingLeft="11.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/status_bar_ongoing_events_title" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@id/notificationCart" android:background="@drawable/adam_clear" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="22.0dip">
+                            <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <TextView android:textSize="10.0dip" android:textColor="#ff130f10" android:gravity="right|center" android:id="@id/latestNotificationText" android:paddingLeft="11.0dip" android:layout_width="@dimen/status_bar_expanded_latest_notification_text_width" android:layout_height="fill_parent" android:layout_marginLeft="33.0dip" android:text="@string/status_bar_latest_events_title" android:layout_alignParentLeft="true" />
+                                <ImageView android:id="@id/clear_button_divider" android:background="@color/quickpanel_button_divider_color" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:layout_toLeftOf="@id/clear_all_button" />
+                                <TextView android:textSize="10.0dip" android:textColor="#ff130f10" android:gravity="right|center" android:id="@id/clear_all_button" android:background="@drawable/ic_notify_clear" android:padding="0.0dip" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="@dimen/status_bar_expanded_clear_button_width" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:text="@string/status_bar_clear_all_button" android:layout_alignParentRight="true" android:contentDescription="@string/accessibility_clear_all" android:textAllCaps="true" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <View android:background="#00000000" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <com.adi.rom.interface.MusicEqualizerVisualizer android:layout_gravity="bottom" android:id="@id/new_visualizer_view_panel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="0.0dip">
+        <FrameLayout android:id="@id/new_custom_visualizer_view_panel" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.adi.rom.interface.VisualizerView android:id="@id/new_custom_visualizer_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </com.adi.rom.interface.MusicEqualizerVisualizer>
+    <View android:id="@id/handle" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/close_handle_height" />
+    <View android:id="@id/handle" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/close_handle_height" />
+    <include android:layout_gravity="bottom" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginBottom="0.0px" layout="@layout/carrier_label_layout" />
+    <View android:layout_gravity="bottom" android:id="@id/handleBottom" android:background="@drawable/tw_close_handle_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0px" />
+    <include android:layout_width="0.0dip" android:layout_height="0.0dip" layout="@layout/layoutnya_scroll" />
+</com.android.systemui.statusbar.phone.NotificationPanelView>

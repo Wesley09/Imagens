@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/access_quick_panel_layout" android:background="@drawable/tutorial_home" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="top|center" android:orientation="horizontal" android:id="@id/help_view_anim" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="top|center" android:orientation="vertical" android:id="@id/help_status_bar_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:layout_gravity="top|center" android:id="@id/quick_panel_status_bar" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/tutorial_status_bar_height" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="top|center" android:orientation="vertical" android:id="@id/help_anim_view" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.android.systemui.TutorialDragDownAnimView android:layout_gravity="top|left|center" android:id="@id/drop_down_anim_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/tutorial_drop_down_anim_left_margin" android:layout_marginTop="@dimen/tutorial_drop_down_anim_top_margin" />
+            <com.android.systemui.TutorialDragDownAnimView android:layout_gravity="top|right|center" android:id="@id/drop_down_anim_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tutorial_drop_down_anim_top_margin" android:layout_marginRight="@dimen/tutorial_drop_down_anim_right_margin" />
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="top|center" android:id="@id/help_tip_access_quick_panel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/tutorial_tip_left_margin" android:layout_marginTop="@dimen/tutorial_tip_top_margin" android:layout_marginRight="@dimen/tutorial_tip_right_margin">
+        <FrameLayout android:id="@id/help_tip_access_quick_panel_msg_text" android:background="@drawable/help_popup_picker_bg_w_01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tutorial_popup_body_and_top_tail_gap">
+            <TextView android:id="@id/help_quick_panel_tip" android:text="@string/tutorial_quick_panel_drag_down" style="@style/TutorialNotiPopupStyle" />
+        </FrameLayout>
+        <ImageView android:layout_gravity="top|center" android:id="@id/help_tip_access_quick_panel_msg_tail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/help_popup_picker_t_c" />
+    </FrameLayout>
+    <LinearLayout android:id="@id/access_quick_panel_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/access_quick_panel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tutorial_quick_panel" />
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="center" android:id="@id/help_tip_access_quick_panel_complete" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/tutorial_tip_left_margin" android:layout_marginRight="@dimen/tutorial_tip_right_margin">
+        <FrameLayout android:id="@id/help_tip_access_quick_panel_complete_msg_text" android:background="@drawable/help_popup_picker_bg_w_01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tutorial_popup_body_and_top_tail_gap">
+            <TextView android:id="@id/help_quick_panel_complete_tip" android:text="@string/tutorial_quick_panel_drag_down_complete" style="@style/TutorialNotiPopupStyle" />
+        </FrameLayout>
+    </FrameLayout>
+    <ImageView android:layout_gravity="top|center" android:id="@id/quick_panel_handler" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tutorial_handler" />
+    <ImageView android:layout_gravity="top|center" android:id="@id/quick_panel_handler_grey" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tutorial_handler_grey" />
+</FrameLayout>
